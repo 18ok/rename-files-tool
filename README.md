@@ -8,7 +8,7 @@
 - ✅ 按文件名排序，保证结果稳定
 - ✅ 避免覆盖已存在的文件
 - ✅ 清晰的重命名日志
-- ✅ Use modern Python syntax (pathlib)
+- ✅ 使用现代 Python 语法（pathlib）
 
 ## 🚀 使用方法
 
@@ -17,46 +17,48 @@
 
 ### 2. 下载代码
 好的，请提供您需要翻译的文本。
-git clone https://github.com/你的用户名/rename-files-tool.git
+git clone https://github.com/your-username/rename-files-tool.git
 cd 重命名文件工具
 3. 运行脚本
-运行 Python 脚本 rename_files.py 。
+Run the Python script rename_files.py.
 📸 运行效果
 test1.txt -> File_1.txt
 test2.txt -> File_2.txt
-test3.txt -> 文件_3.txt
+
+译文：test2.txt -> File_2.txt
+test3.txt -> File_3.txt
 💻 技术栈
 Python 3.13
 pathlib（文件路径处理）
 📚 代码说明
 核心逻辑
 # 1. 获取当前目录下所有.txt文件
-txt_files = [f for f in current_dir.iterdir() if f.is_file() and f.suffix.lower() == ".txt"]
+txt_files = [对于当前目录中每个名为 f 的文件，如果 f 是文件且其扩展名（小写）为 ".txt" ，则进行迭代。]
 
 # 2. 按文件名排序
 txt_files.sort(key=lambda x: x.name)
 
 # 3. 重命名
-for index, old_file in enumerate(txt_files, start=1):
-    new_name = f"文件_{index}.txt"
-    old_file.rename(new_file)
+对于索引和旧文件，按照枚举文本文件从 1 开始：
+new_name = f" "File_{index}.txt"
+旧文件重命名为新文件
 安全机制
 检查新旧文件名是否相同，避免无意义的重命名
 检查目标文件是否已存在，避免覆盖
 🎯 学到的东西
-学会了用Cursor + AI写Python代码
+I have learned to write Python code using Cursor AI.
 学会了用 pathlib 处理文件路径
 学会了文件重命名的逻辑
 学会了把代码放到GitHub
 🔮 下一步计划
  支持更多文件类型（不只是 .txt）
  支持自定义命名规则（用户可以输入格式）
- 添加GUI界面（用tkinter或PyQt）
+Add a GUI interface (using tkinter or PyQt)
  支持批量撤销重命名
 👤 作者
 18好
 
-GitHub: @你的用户名
+GitHub: @18ok
 学习目标：3个月从零基础到跨境电商单品破万
 📄 许可证
 与条款
