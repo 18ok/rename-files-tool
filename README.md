@@ -56,7 +56,7 @@ I have learned to write Python code using Cursor AI.
 Add a GUI interface (using tkinter or PyQt)
  支持批量撤销重命名
 👤 作者
-18好
+18ok
 
 GitHub: @18ok
 学习目标：3个月从零基础到跨境电商单品破万
